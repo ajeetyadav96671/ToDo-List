@@ -1,0 +1,287 @@
+body{
+    background: linear-gradient(30deg,#f507b9,#221a93,#b42ad6);
+    
+    	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+  #main_div{
+    margin-top: 3%;
+  }
+h1,h2{
+    font-size: 45px;
+    color:rgb(220 245 247 / 71%);
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+}
+#todo-input{
+    border-radius: 10px ;
+    background-color: rgb(243, 36, 36);
+    flex: 1 1 0%;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 20px;
+    cursor: pointer;
+    color:bisque
+}
+#todo-form {
+	display: flex;
+}
+#todo-input::placeholder{
+   color:maroon
+}
+#todo-submit{
+    font-size: 20px;
+    color:  rgb(243, 36, 215);
+    background-color: #374151;
+    border: 0;
+    cursor: pointer;
+}
+
+#tasks .task {
+	display: flex;
+	
+	background-color: balck;
+    color:antiquewhite;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+    
+}
+
+.task .content {
+	display: flex;
+    flex: 1 1 0%;
+}
+
+.task .content .text {
+	background-color: burlywood;
+	font-size: 1.125rem;
+	width: 100%;
+	transition: 0.4s;
+    padding: 1rem;
+	border-radius: 1rem;
+    color:maroon;
+    
+}
+
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	
+}
+
+
+
+
+
+.task .actions .edit {
+	background-color: #374151;
+    color : #EC4899;
+    border: 0;
+
+}
+
+.task .actions .delete {
+	
+    background-color: #374151;
+    color : #EC4899;
+    border: 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px)  {
+    #todo-form {
+        
+        justify-content: center;
+    }
+    .task .content {
+        
+        margin-bottom: 1vh;
+    }
+    #tasks .task {
+        align-items: center;
+        flex-direction: column;
+    }
+    div.todo{
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+    body{
+      margin:0px;
+    }
+    #logo {
+      width: 100%;
+      background-color: white;
+      height: 10vh;
+      margin:0px 0px 0px 0px;
+    }
+  
+    nav {
+      background-color:black;
+      height: 28vh;
+      padding-left: 0;
+      
+    }
+  
+    nav ul {
+      padding: 0px;
+      text-align: center;
+      margin:0px;
+      background-color: black;
+      
+    }
+  
+    nav li {
+      list-style-type: none;
+  /*     margin: 3vh 0 10px; */
+      margin:0px;
+      padding:0px;
+      width: 100%;
+    }
+  
+    nav li a {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      display: block;
+      padding: 10px;
+      
+    }
+  
+    nav li:hover a {
+      background-color: brown;
+    }
+  
+    div#main_div {
+      margin-top: 37%;
+  }
+
+  section#nav_section{
+  height: 25vh;
+  }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 708px){
+    #todo-form {
+        
+        justify-content: center;
+    }
+    .task .content {
+        
+        margin-bottom: 1vh;
+    }
+    #tasks .task {
+        align-items: center;
+        flex-direction: column;
+    }
+    div.todo{
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+
+    nav {
+      background-color: #333;
+      height: 8vh;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    div#navigation {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+    }
+    nav div {
+      line-height: 11px; 
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color:black;
+    }
+    
+    nav li {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 5px;
+      height: 100%;
+    }
+    
+    nav li a {
+      display: block;
+      padding: 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: white;
+      color: black;
+      height: 16px;
+      margin-top: 0%;
+    }
+    
+    #logo{
+      height: 8vh;
+      width: 27vh;
+  }
+  nav li{
+    margin-right: 21px;
+  }
+  nav li a{
+    padding:8px;
+  }
+  
+  
+  #main_div {
+    margin-top: 30%;
+}
+  }
+  @media only screen and (min-width: 709px) {
+    
+     /* #logo{
+      height:50px;
+      width:150px;
+      float: left;
+  }  */
+  #todo-form {
+        
+    justify-content: center;
+}
+.task .content {
+    
+    margin-bottom: 1vh;
+}
+#tasks .task {
+    align-items: center;
+    flex-direction: column;
+}
+div.todo{
+    text-align: center;
+    margin-bottom: 2vh;
+}
+#main_div {
+    margin-top: 7%;
+}
+  }
